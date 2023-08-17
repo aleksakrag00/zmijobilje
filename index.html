@@ -1,0 +1,363 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Zmijobilje</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">
+        <img src="img/icons/logo.png" alt="logo" />
+        <div class="description"></div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Istorijat</a></li>
+          <li><a href="#">Prodavnica</a></li>
+          <li><a href="./menu/o_nama.html">O nama</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="gallery">
+          <div class="item">
+            <button class="name" onclick="openPopUp1()">
+              Lemongrass Lavander
+            </button>
+            <button onclick="openPopUp1()">
+              <img
+                src="img/limunska_trava/pakovanje1.jpg"
+                alt="limunska_trava"
+              />
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="name" onclick="openPopUp2()">Jasmine White</button>
+            <button onclick="openPopUp2()">
+              <img
+                src="img/jasmine_white/pakovanje1.jpg"
+                alt="limunska_trava"
+              />
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="name" onclick="openPopUp3()">
+              Strawberry Green
+            </button>
+            <button onclick="openPopUp3()">
+              <img
+                src="img/strawberry_green/pakovanje1.jpg"
+                alt="limunska_trava"
+              />
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="name" onclick="openPopUp4()">Goji Mint</button>
+            <button onclick="openPopUp4()">
+              <img src="img/goji_mint/pakovanje1.jpg" alt="limunska_trava" />
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="name" onclick="openPopUp5()">Aloe Matcha</button>
+            <button onclick="openPopUp5()">
+              <img src="img/aloe_matcha/pakovanje1.jpg" alt="limunska_trava" />
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="name" onclick="openPopUp6()">
+              Dragonfruit Matcha
+            </button>
+            <button onclick="openPopUp6()">
+              <img
+                src="img/dragon_fruit_matcha/pakovanje.jpg"
+                alt="limunska_trava"
+              />
+            </button>
+          </div>
+
+          <div class="item blueberry">
+            <button class="name" onclick="openPopUp7()">
+              Blueberry Matcha
+            </button>
+            <button onclick="openPopUp7()">
+              <img src="img/borovnica/pakovanje1.jpg" alt="limunska_trava" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li id="careers"><a href="#">Careers</a></li>
+          <li>&copy;Zmijobilje</li>
+          <li>Contact Us: <br />+381 11 222 3333</li>
+        </ul>
+      </div>
+
+      <!--POP UP-OVI-->
+
+      <div class="popup" id="p1">
+        <h2>Lemongrass Lavander</h2>
+        <div class="popcont">
+          <img src="./img/limunska_trava/pakovanje2.jpg" alt="" />
+          <p>
+            Limunskaa trava uzgajana na Goliji savršen je sastojak našeg čaja za
+            spavanje i umirivanje. Njen osvežavajući sitrusni ukus dopunjen je
+            suvim cvetom lavande iz beskrajnih ljubičastih polja severne
+            Vojvodine. Lavanda deluje protiv nemira, grčeva, anksioznosti,
+            stresa spoljašnjeg uzroka te je ovaj čaj savršen napitak za naše
+            večernje rituale.
+          </p>
+          <h3>Cena: 3000 RSD</h3>
+          <button class="dodaj" onclick="dodaj1()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp1()">Gotovo</button>
+      </div>
+
+      <div class="popup" id="p2">
+        <h2>Jasmine White</h2>
+        <div class="popcont">
+          <img src="./img/jasmine_white/pakovanje2.jpg" alt="" />
+          <p>
+            Jasimn kao sastojak čaj popularan je još od Han perioda kineskog
+            carstva. Sofistirani cvet Jasmina simbol je sreće i bogastva te do
+            danas zadržava istbu simboliku. Njegov prirodni pratilac je beli
+            čaj, napitak dugovečnosti i zdravlja. Ova kombinacija preporučuje se
+            osetljivom organizmu, slabom želucu i osetljivom crevnom sistemu.
+          </p>
+          <h3>Cena: 3500 RSD</h3>
+          <button class="dodaj" onclick="dodaj2()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp2()">Gotovo</button>
+      </div>
+
+      <div class="popup" id="p3">
+        <h2>Strawberry Green</h2>
+        <div class="popcont">
+          <img src="./img/strawberry_green/pakovanje2.jpg" alt="" />
+          <p>
+            Zeleni čaj s južnih obronaka Himalaja poznat je kao prirodni čistač
+            organizma. Hiljadama godina negovana tradicicja ispjanja
+            najkvalitetnieg lista zelenog čaja danas je produžena i dopunjena
+            organskim listom i plodom organske divlje jagode sa Kosmaja. List
+            jagode pomaže kod stomačnih tegoba, mučnina, zatvora, a plod jagode
+            daje blagu, luksuznu aromu. Oštrina zelenog čaja zaokružena je
+            blagim notama jagode te je ovaj napitak blago sladak i osvežavajuć.
+            Leti se preporučuje serviran u posudi s ledom.
+          </p>
+          <h3>Cena: 4000 RSD</h3>
+          <button class="dodaj" onclick="dodaj3()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp3()">Gotovo</button>
+      </div>
+
+      <div class="popup" id="p4">
+        <h2>Goji Mint</h2>
+        <div class="popcont">
+          <img src="./img/goji_mint/pakovanje2.jpg" alt="" />
+          <p>
+            Iz stepa udaljene Mongolije stiže naš organski Crveni Goji,posebnim
+            procesima pripremljen za produženu aromu i očuvanje bogatih
+            hranljivih materija. Poznat kao supernamirnica, bogata vitaminom C i
+            antioksidansima, nezaobilazan je za održanje snažnog imuniteta i
+            zdravlja crevnog sistema. Razređuje zgusnutu krv i povišava snižen
+            krvni pritisak, podmlađuje krvotok i podiže nivo kiseonika u
+            ćelijama. Goji, uparen s Mentom ručno ubranom pod obroncima Zlatara,
+            daje nappitak slatko-kiselkaste kompozicije koji osvežava ceo
+            irganizam. Leti savršen kao ohlađeni čaj sa listićima sveže mente,
+            zimi najbliži prijatelj prazničnih medenjaka. Čaj namenjen zdravlju
+            cele porodice.
+          </p>
+          <h3>Cena: 4500 RSD</h3>
+          <button class="dodaj" onclick="dodaj4()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp4()">Gotovo</button>
+      </div>
+
+      <div class="popup" id="p5">
+        <h2>Aloe Matcha</h2>
+        <div class="popcont">
+          <img src="./img/aloe_matcha/pakovanje1.jpg" alt="" />
+          <p>
+            Aloe vera se zbog bogatih hidrirajućih sastojaka obilato koristi u
+            kozmetici i medicini. Kombinovana sa najkvalitetnijom zelenom mačom
+            iz Japana daje sjajan svakodnevni napitak koji osvežava i hrani.
+            Idealno se kobinuje sa svim smutijima, šejkovima i mlekom.
+          </p>
+          <h3>Cena: 5000 RSD</h3>
+          <button class="dodaj" onclick="dodaj5()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp5()">Gotovo</button>
+      </div>
+
+      <div class="popup" id="p6">
+        <h2>DragonFruit Matcha</h2>
+        <div class="popcont">
+          <img src="./img/dragon_fruit_matcha/pakovanje.jpg" alt="" />
+          <p>
+            Osvežavajuća multivitaminska kombinacija za svaki dan. Antioksidansi
+            zelene mače ukombinovani sa gvožđem i magnezijumom majevog voća daju
+            energiju koja je telu potrebna za dnevnu aktivnost. Može se
+            koristiti i kao dodatak jelima i sokovima.
+          </p>
+          <h3>Cena: 5500 RSD</h3>
+          <button class="dodaj" onclick="dodaj6()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp6()">Gotovo</button>
+      </div>
+
+      <div class="popup" id="p7">
+        <h2>Blueberry Matcha</h2>
+        <div class="popcont">
+          <img src="./img/borovnica/pakovanje1.jpg" alt="" />
+          <p>
+            Borovnica je izvor vitamina neophodnih nervnom sistemu i pamćenju.
+            Praćena japanskom zelenom mačom čini nezaobilazni sastojak svakog
+            vitaminskog doručka ili napitka.
+          </p>
+          <h3>Cena: 6000 RSD</h3>
+          <button class="dodaj" onclick="dodaj7()">Dodaj u korpu</button>
+        </div>
+        <button class="closeButton" onclick="closePopUp7()">Gotovo</button>
+      </div>
+    </div>
+
+    <div class="korpa">
+      <button class="korpanat">Korpa</button>
+      <button>
+        <img src="img/icons/bag.jpg" alt="" />
+      </button>
+      <p>Vas trenutni racun iznosi:</p>
+      <p id="iznos">0 RSD</p>
+      <button onclick="isprazni()">Isprazni korpu</button>
+    </div>
+
+    <script>
+      let p1 = document.getElementById("p1");
+      let p2 = document.getElementById("p2");
+      let p3 = document.getElementById("p3");
+      let p4 = document.getElementById("p4");
+      let p5 = document.getElementById("p5");
+      let p6 = document.getElementById("p6");
+      let p7 = document.getElementById("p7");
+      let iznos = document.getElementById("iznos");
+
+      let korpa = 0;
+
+      let cena1 = 3000;
+      let cena2 = 3500;
+      let cena3 = 4000;
+      let cena4 = 4500;
+      let cena5 = 5000;
+      let cena6 = 5500;
+      let cena7 = 6000;
+
+      function openPopUp1() {
+        p1.classList.add("open");
+      }
+
+      function closePopUp1() {
+        p1.classList.remove("open");
+      }
+
+      function openPopUp2() {
+        p2.classList.add("open");
+      }
+
+      function closePopUp2() {
+        p2.classList.remove("open");
+      }
+
+      function openPopUp3() {
+        p3.classList.add("open");
+      }
+
+      function closePopUp3() {
+        p3.classList.remove("open");
+      }
+
+      function openPopUp4() {
+        p4.classList.add("open");
+      }
+
+      function closePopUp4() {
+        p4.classList.remove("open");
+      }
+
+      function openPopUp5() {
+        p5.classList.add("open");
+      }
+
+      function closePopUp5() {
+        p5.classList.remove("open");
+      }
+
+      function openPopUp6() {
+        p6.classList.add("open");
+      }
+
+      function closePopUp6() {
+        p6.classList.remove("open");
+      }
+
+      function openPopUp7() {
+        p7.classList.add("open");
+      }
+
+      function closePopUp7() {
+        p7.classList.remove("open");
+      }
+
+      function dodaj1() {
+        korpa += cena1;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function dodaj2() {
+        korpa += cena2;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function dodaj3() {
+        korpa += cena3;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function dodaj4() {
+        korpa += cena4;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function dodaj5() {
+        korpa += cena5;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function dodaj6() {
+        korpa += cena6;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function dodaj7() {
+        korpa += cena7;
+        iznos.innerHTML = korpa + " RSD";
+      }
+
+      function isprazni() {
+        korpa = 0;
+        iznos.innerHTML = korpa + " RSD";
+      }
+    </script>
+  </body>
+</html>

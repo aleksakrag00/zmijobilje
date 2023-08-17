@@ -1,0 +1,334 @@
+* {
+  background-color: #dde0ab;
+  font-family: Raleway;
+  font-weight: bolder;
+  color: black;
+  padding: 0px;
+}
+
+.item img {
+  mix-blend-mode: multiply;
+}
+
+body {
+  margin: 0px;
+}
+
+.header img {
+  height: 270px;
+  width: 270px;
+  mix-blend-mode: multiply;
+}
+.gallery img {
+  width: 200px;
+  height: 170px;
+  transition: 0.5s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 300px;
+  background-color: #668ba4;
+}
+
+.header h1 {
+  background-color: #668ba4;
+  font-size: 40px;
+  margin: 0 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  background-color: #97cba9;
+  padding: 0px;
+}
+
+.menu ul,
+.menu li,
+.menu a {
+  background-color: #97cba9;
+}
+
+.menu ul {
+  margin: 0px;
+  display: flex;
+  width: 800px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 5%;
+}
+
+.menu li,
+.menu a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #dde0ab;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  background-color: #feffdf;
+}
+.gallery {
+  background-color: #feffdf;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.item button {
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+
+.item button:hover {
+  color: #668ba4;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+}
+
+.item,
+.item button {
+  background-color: #feffdf;
+  text-decoration: none;
+}
+
+.name {
+  padding-bottom: 10px;
+}
+
+.blueberry {
+  grid-area: 3/2/4/3;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  width: 1000px;
+  justify-content: center;
+}
+
+.footer,
+.footer ul,
+.footer li,
+.footer a {
+  background-color: #668ba4;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 800px;
+  height: 50px;
+}
+
+.footer li {
+  flex-shrink: 1;
+  flex-basis: 150px;
+  height: 30px;
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#careers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #97cba9;
+}
+#careers a {
+  transition: all 0.3s ease 0s;
+  color: #97cba9;
+}
+
+#careers a:hover {
+  color: black;
+}
+
+.korpa {
+  position: fixed;
+  right: 3%;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.korpa button {
+  border: none;
+}
+
+.korpanat {
+  font-size: 50px;
+}
+
+.korpa img {
+  width: 100px;
+  height: 100px;
+  mix-blend-mode: multiply;
+  transition: 0.5s;
+}
+
+.korpa img:hover {
+  transform: scale(1.1);
+}
+
+.korpa button {
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+
+.korpa button:hover {
+  color: #668ba4;
+}
+
+/* Manje rezolucije */
+
+@media (min-width: 820px) and (max-width: 950px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+  .footer li {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 484px) and (max-width: 819px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer li {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 483px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header,
+  .menu,
+  .footer,
+  .wrapper {
+    width: 100%;
+  }
+
+  .menu li {
+    flex-direction: column;
+  }
+}
+
+/* Pop-upovi */
+
+.popup {
+  width: 60%;
+  height: 90vh;
+  background-color: white;
+  position: fixed;
+  top: 40px;
+  padding: 0px 50px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  visibility: hidden;
+  transform: scale(0.1);
+  transition: 0.2s;
+}
+
+.popup * {
+  background-color: white;
+}
+
+.popup img {
+  height: 350px;
+  width: 400px;
+  float: left;
+}
+
+.popup button {
+  height: 50px;
+  width: 120px;
+}
+
+.dodaj {
+  background-color: orangered;
+}
+
+.open {
+  visibility: visible;
+  transform: scale(1);
+}
